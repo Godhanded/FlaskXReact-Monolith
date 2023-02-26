@@ -23,6 +23,9 @@
                     ```
 * ```npm install -g sass```
 
+* data from the flask server is collected as props and passed to the ```<App/>``` component
+* entry point is [index.html](./templates/) >> [index.js](./src/index.js)
+
 
 ## starting up the webApp
 
@@ -34,3 +37,5 @@ to precompile react into [flask static files](./static/bundle.js)
 * ```FLASK_DEBUG=true flask run```
 
 App will be hosted on port 5000 of your localhost
+
+## django version coming soon
