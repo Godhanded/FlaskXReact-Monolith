@@ -1,8 +1,9 @@
 #data {
     display: none;
 }
-.root{
+
 .foo{
-    color: green($color: #000000);
+    color: green;
     font-size: 100px;
-}}
+    margin-left: 50px;
+}

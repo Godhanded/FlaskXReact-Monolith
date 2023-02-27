@@ -3,7 +3,7 @@
 
 ## My Boiler plate code to use React@18 directly with Flask templates and flask-jinja2
 
-***note: styles not set up yet***
+
 
 ## Python Server setup
 
@@ -30,8 +30,13 @@
 ## starting up the webApp
 
 > run in first terminal
+
+* ```yarn style```
+to convert scss in [styles.scss](./src/styles.scss) to css in [stylesheet.scss](./static/stylesheet.css)
+
 * ``` yarn build``` 
 to precompile react into [flask static files](./static/bundle.js)
+
 
 > run in second terminal
 * ```FLASK_DEBUG=true flask run```

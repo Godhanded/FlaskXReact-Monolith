@@ -2,9 +2,10 @@
   display: none;
 }
 
-body>div>p {
+.foo {
   color: green;
   font-size: 100px;
+  margin-left: 50px;
 }
 
 /*# sourceMappingURL=stylesheet.css.map */

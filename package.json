@@ -12,6 +12,7 @@
     "react-dom": "^18.2.0"
   },
   "scripts": {
-    "build": "webpack --config webpack.config.js --watch"
+    "build": "webpack --config webpack.config.js --watch",
+    "style": "sass ./src/styles.scss:static/stylesheet.css"
   }
 }
