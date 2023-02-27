@@ -6,7 +6,7 @@ from flask import (
     request,
     Response,
     abort,
-    jsonify,
+    flash
 )
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
@@ -18,6 +18,7 @@ from logging import Formatter, FileHandler
 
 app = Flask(__name__)
 app.config.from_object("config")
+# app.config["secrete_key"]="foo bar"
 
 db.init_app(app)
 migrate = Migrate(app, db)
@@ -26,5 +27,5 @@ migrate = Migrate(app, db)
 @app.route("/", methods=["GET"])
 def home():
     data = json.dumps({"hello": "hello_world"})
-    print(data)
+    # flash("successfully rendered","message")
     return render_template("index.html", data=data)
